@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Origen</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+  <header class="header">
+    <div class="barra-arriba">
+      <div class="redes">
+        <a href="#"><img src="images/instagram.png" alt="instagram" width="20"></a>
+        <a href="#"><img src="images/facebook.png" alt="facebook" width="20"></a>
+        <a href="#"><img src="images/youtube.png" alt="youtube" width="25"></a>
+
+      </div>
+    </div>
+    <nav class="barra-menu">
+      <div>
+        <a href="index.html">
+          <img class="logo" src="images/logo3.png" alt="imagen del logo"></a>
+      </div>
+      <menu class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="galeria.html">Entorno</a></li>
+        <li><a href="videos.html"></a>Vídeos</li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <div class="iconos">
+          <a href="login.html"><img src="images/cuenta.png" alt="login" width="30"></a>
+
+          <img class="lupa" onclick="window.modal.showModal()" src="images/lupa.png" alt="lupa" width="30">
+
+        </div>
+
+        <dialog id="modal">
+
+          <h3>Buscar en toda la web</h3>
+          <br>
+
+          <input type="search" id="searchInput" placeholder="Buscar..." class="search">
+          <button class="btnCerrar" onclick="window.modal.close();">✖</button>
+        </dialog>
+
+
+      </menu>
+
+    </nav>
+  </header>
+  <nav class="migas">
+    <a href="index.html">Inicio</a>
+    <span>›</span>
+    <span class="actual">Contacto</span>
+  </nav>
+
+  <div class="contacto">
+
+
+
+    <form class="form centrado" method="post">
+
+      <h2 class="georgia">CONTÁCTANOS</h2>
+
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="user_name" placeholder="Escribe aquí tu nombre">
+      <br>
+      <label>Email:</label>
+      <input type="text" id="email" name="user_name" placeholder="Escribe aquí tu email">
+      <br>
+
+      <label for="consulta">Asunto:</label>
+      <input type="text" id="consulta" placeholder="Ej: Dudas, sugerencias...">
+      <br>
+
+
+
+      <label for="msg">Mensaje:</label>
+      <textarea id="msg" name="user_message" placeholder="Escribe aquí tu mensaje"></textarea>
+
+      <br>
+      <input type="checkbox" name="terminos" id="terminos" required>
+      <br>
+      <span>Acepto los términos y condiciones</span>
+      <br>
+
+
+      <br>
+      <div>
+        <button type="submit">Enviar mensaje</button>
+      </div>
+    </form>
+
+    <h2 class="georgia">DÓNDE ESTAMOS</h2>
+
+
+
+    <div class="direccion">
+
+      <h3>Dirección:</h3>
+      <p>C/ América, 20.
+        08228 Terrassa (Barcelona)</p>
+      <h3>Teléfono de contacto:</h3>
+      <span>600.000.000</span>
+
+    </div>
+    <div class="mapa">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d23891.274720163823!2d2.039434428588867!3d41.53873344897983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1767364697213!5m2!1ses!2ses"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+
+  </div>
+
+  <div class="footer">
+    <div class="flex-container">
+
+      <!-- PRIMERA COLUMNA -->
+      <div class="flex1">
+        <h3>Nuestra web</h3>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="galeria.html">Entorno</a></li>
+          <li><a href="#">Sobre nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="login.html">Iniciar sesión</a></li>
+        </ul>
+      </div>
+
+      <!-- SEGUNDA COLUMNA -->
+      <div class="flex1">
+        <h3>Que hacemos?</h3>
+        <ul>
+          <li><a href="#cabogata">Cabo de Gata</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#valores">Nuestros valores</a></li>
+          <li><a href="#cabogata">Escapadas</a></li>
+          <li><a href="#galeria">Retiros</a></li>
+          <li><a href="#valores">Psicología</a></li>
+        </ul>
+      </div>
+
+      <!-- TERCERA COLUMNA -->
+      <div class="flex1">
+        <h3>Contacto</h3>
+        <p>
+
+          ✉️ info@origen.com<br>
+          ☎️ +34 600 000 000
+        </p>
+        <br>
+        <h3>Síguenos en redes</h3>
+        <br>
+        <a href="#"><img class="left" src="images/instagram.png" alt="instagram" width="20">Instagram</a>
+        <br>
+        <a href="#"><img class="left" src="images/facebook.png" alt="facebook" width="20">Facebook</a>
+        <br>
+        <a href="#"><img class="left" src="images/youtube.png" alt="youtube" width="25">Youtube</a>
+      </div>
+      <div class="flex1">
+        <h3>Dónde estamos</h3>
+        ORIGEN<br>
+        Parque Natural Cabo de Gata<br>
+        Almería, España<br><br>
+        <div class="mapa2">
+
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d23891.274720163823!2d2.039434428588867!3d41.53873344897983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1767364697213!5m2!1ses!2ses"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+
+
+    </div>
+
+    <footer class="footer2">
+      <a href="#">Aviso legal</a>
+      <a href="#">Politica de cookies</a>
+      <a href="#">Política de privacidad</a>
+      <br>
+      <p>© 2026 Origen • Web de prueba realizada por Stephanie Metschke</p>
+    </footer>
+
+</body>
+
+
+
+</html>

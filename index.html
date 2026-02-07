@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Origen</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <script src="js/galeria.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/ayuda.js"></script>
+    <script src="js/cookies.js"></script>
+
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="barra-arriba">
+            <div class="redes">
+                <a href="#"><img src="images/instagram.png" alt="instagram" width="20"></a>
+                <a href="#"><img src="images/facebook.png" alt="facebook" width="20"></a>
+                <a href="#"><img src="images/youtube.png" alt="youtube" width="25"></a>
+
+            </div>
+        </div>
+        <nav class="barra-menu">
+            <div>
+                <a href="index.html">
+                    <img class="logo" src="images/logo3.png" alt="imagen del logo"></a>
+            </div>
+            <menu class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="galeria.html">Entorno</a></li>
+                <li><a href="videos.html">Vídeos</li></a>
+                <li><a href="contacto.html">Contacto</a></li>
+                <div class="iconos">
+                    <a href="login.html"><img src="images/cuenta.png" alt="login" width="30"></a>
+
+                    <img class="lupa" onclick="window.modal.showModal()" src="images/lupa.png" alt="lupa" width="30">
+
+                </div>
+
+                <dialog id="modal">
+
+                    <h3>Buscar en toda la web</h3>
+                    <br>
+
+                    <input type="search" id="searchInput" placeholder="Buscar..." class="search">
+                    <button class="btnCerrar" onclick="window.modal.close();">✖</button>
+                </dialog>
+
+            </menu>
+
+        </nav>
+
+    </header>
+
+    <dialog id="cookieDialog">
+    <div id="cookies">
+        <p>Esta web usa cookies para mejorar la experiencia. 
+            <br>
+            ¿Aceptas su uso?</p>
+
+        <button onclick="aceptar()">Aceptar</button>
+        <button onclick="rechazar()">Rechazar</button>
+    </div>
+</dialog>
+
+
+    <section class="banner">
+
+        <!--IMAGEN DE FONDO CON EL CSS-->
+        <div class="divbanner">
+            <h1>El viaje empieza dentro</h1>
+            <p class="medium">Menos ruido, más presencia</p>
+            <br>
+            <input type="search" name="buscar" placeholder="Buscar escapadas en...">
+            <input type="button" value="Buscar" id="inbuscar"></input>
+
+
+        </div>
+
+    </section>
+
+    <div id="cabogata">
+        <h2>Cabo de gata</h2>
+
+        <p>Hay lugares donde el tiempo se ralentiza y lo esencial vuelve a tener sentido. Cabo de Gata es uno de ellos.
+
+            Una escapada para alejarte del ruido, volver al origen y recordar quién eres cuando no hay prisa ni
+            expectativas. El mar, el desierto y el silencio se convierten en maestros: te invitan a escuchar, a sentir,
+            a
+            estar presente.
+
+            Caminar descalza, respirar hondo, mirar sin juzgar. Conectar con la naturaleza para reconectar contigo.
+            Soltar
+            lo aprendido, lo impuesto, y regresar a lo simple, a lo auténtico.
+            <br>
+
+            <b class="medium">No es solo un viaje. Es un regreso a ti.</b>
+        </p>
+    </div>
+    <section id="galeria" class="foto grande pequeña">
+        <figure><img src="images/agua.jpg" alt="imagen1"></figure>
+        <figure><img src="images/cabopaseo.jpg" alt="imagen2"></figure>
+        <figure><img src="images/playacabo.jpg" alt="imagen3"></figure>
+        <figure><img src="images/sirenas.jpg" alt="imagen3"></figure>
+    </section>
+
+    <section id="valores" class="quiensomos">
+
+        <div class="sobrenosotros flex-container">
+
+            <div class="flex2 p2">
+
+
+                <h2>Nuestros valores</h2>
+                <br>
+                <p>Creemos que no hay nada que arreglar, solo algo que recordar.
+                    <b>Recordar quién eres</b> cuando bajas el ruido, cuando dejas de cumplir expectativas ajenas y
+                    vuelves a
+                    escuchar tu propio pulso.
+
+                <p>Nuestros retiros nacen del deseo de <b>volver a lo ancestral, al origen, a lo natural</b>. A ese
+                    lugar interno
+                    donde el cuerpo sabe, la mente se calma y la vida recupera sentido. Nos alejamos de los estándares
+                    impuestos para acompañarte a construir tu propio criterio, desde la presencia y la honestidad.</p>
+
+                <p>Creamos espacios en plena naturaleza —junto al mar o en la montaña— porque ahí todo se ordena de
+                    forma
+                    sencilla. La tierra sostiene, el agua mueve, el silencio revela. No venimos a enseñarte nada nuevo,
+                    sino
+                    a facilitar el reencuentro contigo.
+
+                    Nuestro enfoque une psicología, meditación y movimiento consciente, integrados de forma práctica y
+                    humana. Sin promesas vacías. Con profundidad, respeto y una mirada realista sobre lo que
+                    implica conocerse de verdad.</p>
+
+                <p>Estos retiros son para quienes sienten el llamado de <b>vivir más alineados, más libres y más
+                        conectados con
+                        su naturaleza esencial</b>. Para quienes intuyen que la calma no se encuentra fuera, sino cuando
+                    dejas de ir
+                    contra ti.
+                    <br>
+
+                    Volver al origen no es retroceder.
+                    <br>
+                <p class="medium">Es volver a casa.</p>
+                </p>
+            </div>
+            <div class="flex1 mediana">
+                <img src="images/banner.jpg" alt="casa huesca">
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <div id="actividades">
+        <h2>Nuestras actividades</h2>
+
+        <p>En Origen te invitamos a reconectar contigo mismo a través de experiencias diseñadas para el bienestar
+            integral del cuerpo, la mente y el espíritu. Las actividades que realizamos varían según el retiro que
+            elijas, permitiéndote crear una vivencia alineada con tus necesidades y tu momento personal.</p>
+        <p>Podrás participar en prácticas de yoga y meditación para cultivar la presencia y la calma interior, así como
+            en senderismo consciente, donde la naturaleza se convierte en una aliada para el equilibrio y la
+            introspección. También ofrecemos equinoterapia, terapia emocional y espacios de contacto con animales,
+            ideales para sanar, liberar tensiones y fortalecer la conexión con lo esencial. Cada actividad en Origen
+            está pensada para acompañarte en un proceso de autodescubrimiento, descanso profundo y transformación
+            personal.</p>
+    </div>
+
+    <br>
+    <section class="slider">
+        <div class="slides">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <button id="botonNext" class="arrow izq">&#10094;</button>
+            <button id="botonBack" class="arrow der">&#10095;</button>
+
+        </div>
+
+
+    </section>
+
+    <footer>
+        <div class="footer">
+            <div class="flex-container">
+
+                <!-- PRIMERA COLUMNA -->
+                <div class="flex1">
+                    <h3>Nuestra web</h3>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="galeria.html">Entorno</a></li>
+                        <li><a href="#">Sobre nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="login.html">Iniciar sesión</a></li>
+                        <li><a href="registro.html">Registrarse</a></li>
+                    </ul>
+                </div>
+
+                <!-- SEGUNDA COLUMNA -->
+                <div class="flex1">
+                    <h3>Que hacemos?</h3>
+                    <ul>
+                        <li><a href="#cabogata">Cabo de Gata</a></li>
+                        <li><a href="#galeria">Galería</a></li>
+                        <li><a href="#valores">Nuestros valores</a></li>
+                        <li><a href="#cabogata">Escapadas</a></li>
+                        <li><a href="#galeria">Retiros</a></li>
+                        <li><a href="#valores">Psicología</a></li>
+                    </ul>
+                </div>
+
+                <!-- TERCERA COLUMNA -->
+                <div class="flex1">
+                    <h3>Contacto</h3>
+                    <p>
+
+                        ✉️ info@origen.com<br>
+                        ☎️ +34 600 000 000
+                    </p>
+                    <br>
+                    <h3>Síguenos en redes</h3>
+                    <br>
+                    <a href="#"><img class="left" src="images/instagram.png" alt="instagram" width="20">Instagram</a>
+                    <br>
+                    <a href="#"><img class="left" src="images/facebook.png" alt="facebook" width="20">Facebook</a>
+                    <br>
+                    <a href="#"><img class="left" src="images/youtube.png" alt="youtube" width="25">Youtube</a>
+                </div>
+                <div class="flex1">
+                    <h3>Dónde estamos</h3>
+                    ORIGEN<br>
+                    Parque Natural Cabo de Gata<br>
+                    Almería, España<br><br>
+                    <div class="mapa2">
+
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d23891.274720163823!2d2.039434428588867!3d41.53873344897983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1767364697213!5m2!1ses!2ses"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="footer2">
+                <a href="#">Aviso legal</a>
+                <a href="#">Politica de cookies</a>
+                <a href="#">Política de privacidad</a>
+                <br>
+                <p>© 2026 Origen • Web de prueba realizada por Stephanie Metschke</p>
+            </div>
+
+    </footer>
+</body>
+
+
+
+</html>

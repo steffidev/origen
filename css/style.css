@@ -452,27 +452,42 @@ label {
 }
 
 #galeria figure img {
-    width: 100%;
-    height: 100%;
     cursor: zoom-in;
+    width: 90%;
+    height: 80%;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+#galeria2 figure {
+    flex: 1;
+    min-width: 200px;
+}
+
+#galeria2 figure img {
+    cursor: zoom-in;
+    width: 90%;
+    height: 80%;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 8px;
 }
 
 figure.grande {
     position: fixed;
-    top: 0;
+    top: 100px;
     left: 0;
-    background-color: rgba(176, 176, 176, 0.63);
+    background-color: rgba(176, 176, 176, 0.8);
     margin: 0px;
     padding: 5%;
     text-align: center;
     width: 100vw;
     height: 100vh;
-    cursor: zoom-out;
+    cursor: zoom-out; 
 }
 
-figure.grande img {
-    height: 90%;
-}
+
 
 .redes img {
     margin-left: 4%;
@@ -487,40 +502,26 @@ figure.grande img {
 
 }
 
-#galeria figure {
-    flex: 1;
-    min-width: 200px;
-}
-
-#galeria figure img {
-    width: 90%;
-    height: 80%;
-    cursor: zoom-in;
-    object-fit: cover;
-    overflow: hidden;
-    border-radius: 8px;
-}
 
 #galeria figure img:hover {
     transform: scale(1.1);
     transition: 0.3s;
 }
 
-figure.grande {
-    position: fixed;
-    top: 100px;
-    left: 0;
-    background-color: rgba(176, 176, 176, 0.8);
-    margin: 0px;
-    padding: 5%;
-    text-align: center;
-    width: 100vw;
-    height: 100vh;
-    cursor: zoom-out;
+#galeria2 {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+#galeria2 figure img:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
 }
 
 figure.grande img {
-    height: 80%;
+    height: 90%;
 }
 
 /*SLIDER*/
@@ -661,6 +662,8 @@ footer {
 html {
     height: 100%;
 }
+
+/*imágenes de redes para login y registro*/
 
 .iniciosesion img {
     margin: 2%;

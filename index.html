@@ -11,6 +11,7 @@
     <script src="js/slider.js"></script>
     <script src="js/ayuda.js"></script>
     <script src="js/cookies.js"></script>
+    <script src="js/ayuda.js"></script>
 
 </head>
 
@@ -33,40 +34,42 @@
             <menu class="menu">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="galeria.html">Entorno</a></li>
-                <li><a href="videos.html">Vídeos</li></a>
+                <li><a href="videos.html">Vídeos</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
-                <div class="iconos">
-                    <a href="login.html"><img src="images/cuenta.png" alt="login" width="30"></a>
-
-                    <img class="lupa" onclick="window.modal.showModal()" src="images/lupa.png" alt="lupa" width="30">
-
-                </div>
-
-                <dialog id="modal">
-
-                    <h3>Buscar en toda la web</h3>
-                    <br>
-
-                    <input type="search" id="searchInput" placeholder="Buscar..." class="search">
-                    <button class="btnCerrar" onclick="window.modal.close();">✖</button>
-                </dialog>
-
             </menu>
+            <div class="iconos">
+                <a href="login.html"><img src="images/cuenta.png" alt="login" width="30"></a>
+
+                <img class="lupa" onclick="window.modal.showModal()" src="images/lupa.png" alt="lupa" width="30">
+
+            </div>
+
+            <dialog id="modal">
+
+                <h3>Buscar en toda la web</h3>
+                <br>
+
+                <input type="search" id="searchInput" placeholder="Buscar..." class="search">
+                <button class="btnCerrar" onclick="window.modal.close();">✖</button>
+            </dialog>
+
+
 
         </nav>
 
     </header>
 
     <dialog id="cookieDialog">
-    <div id="cookies">
-        <p>Esta web usa cookies para mejorar la experiencia. 
-            <br>
-            ¿Aceptas su uso?</p>
+        <div id="cookies">
+            <p>Esta web usa cookies para mejorar la experiencia.
+                <br>
+                ¿Aceptas su uso?
+            </p>
 
-        <button onclick="aceptar()">Aceptar</button>
-        <button onclick="rechazar()">Rechazar</button>
-    </div>
-</dialog>
+            <button onclick="aceptar()">Aceptar</button>
+            <button onclick="rechazar()">Rechazar</button>
+        </div>
+    </dialog>
 
 
     <section class="banner">
@@ -77,7 +80,7 @@
             <p class="medium">Menos ruido, más presencia</p>
             <br>
             <input type="search" name="buscar" placeholder="Buscar escapadas en...">
-            <input type="button" value="Buscar" id="inbuscar"></input>
+            <input type="button" value="Buscar" id="inbuscar">
 
 
         </div>
@@ -102,12 +105,12 @@
             <b class="medium">No es solo un viaje. Es un regreso a ti.</b>
         </p>
     </div>
-    <section id="galeria" class="foto grande pequeña">
+    <div id="galeria" class="foto grande pequeña">
         <figure><img src="images/agua.jpg" alt="imagen1"></figure>
         <figure><img src="images/cabopaseo.jpg" alt="imagen2"></figure>
         <figure><img src="images/playacabo.jpg" alt="imagen3"></figure>
         <figure><img src="images/sirenas.jpg" alt="imagen3"></figure>
-    </section>
+    </div>
 
     <section id="valores" class="quiensomos">
 
@@ -148,7 +151,7 @@
                     Volver al origen no es retroceder.
                     <br>
                 <p class="medium">Es volver a casa.</p>
-                </p>
+                
             </div>
             <div class="flex1 mediana">
                 <img src="images/banner.jpg" alt="casa huesca">
@@ -174,7 +177,7 @@
     </div>
 
     <br>
-    <section class="slider">
+    <div class="slider">
         <div class="slides">
             <img src="" alt="">
             <img src="" alt="">
@@ -186,7 +189,7 @@
         </div>
 
 
-    </section>
+    </div>
 
     <footer>
         <div class="footer">
@@ -223,8 +226,8 @@
                     <h3>Contacto</h3>
                     <p>
 
-                        ✉️ info@origen.com<br>
-                        ☎️ +34 600 000 000
+                         &#128140;  info@origen.com<br>
+                         &#128222; +34 600 000 000
                     </p>
                     <br>
                     <h3>Síguenos en redes</h3>
@@ -248,9 +251,8 @@
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
-
-
             </div>
+        </div>
 
             <div class="footer2">
                 <a href="#">Aviso legal</a>
